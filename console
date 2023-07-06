@@ -1,0 +1,35 @@
+File Section
+
+1.upload all files in a Zip Format.
+2.In console Type this steps;
+  1. unzip foldername.zip
+  2. pip install requirement
+  3.To see all files Type -> ls
+
+Web Section:
+Web -> Add a new webapp -> Next
+    ->Flask Next
+    ->Python 3.10 Next
+    ->home/username/mysite/Foldername/flask_app.py  -> Next
+    --> open in web page
+
+To change File Location & Run our File
+Web --> WSGI CONFIG FILE --> CLick
+  from ---(File to run) import app as application
+
+Web:
+source:/home/username/mysite/Foldername
+workdir:home/username/
+
+
+
+
+
+
+
+
+
+
+
+
+
