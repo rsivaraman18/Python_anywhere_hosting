@@ -1,0 +1,83 @@
+Move to Database Section
+  1.Create A new Password : 8Letters
+  2.Create a Database name.
+  3.Move to Database console.
+
+
+console:
+  1.See Databases:
+  command: show databases;
+
+  2.select database:
+  command: use rsivaraman2$new_daily_fresh;
+
+  3.Show tables
+  command: show tables;
+
+  4.Create product tables
+  command:
+  CREATE TABLE products
+  (
+  Prod_id int primary key auto_increment NOT NULL,
+  Prod_name varchar(30) NOT NULL,
+  Prod_unit varchar(7) NOT NULL,
+  Prod_price double NOT NULL
+  );
+
+  5.Insert data's into products
+  command:
+  INSERT INTO products  (prod_name,prod_unit,Prod_price) VALUES 
+  ('Apple','kg',100),
+  ('Mango','kg',90),
+  ('Watermelon','each',80),
+  ('Pineapple','each',70),
+  ('Orange','kg',60);
+
+  6.See all products
+  command: select * from products;
+  
+  7.Create table Orders
+
+  command:
+  CREATE TABLE orders
+  (
+  order_id int primary key  auto_increment NOT NULL,
+  customer_name varchar(50) NOT NULL,
+  grand_total double NOT NULL,
+  order_time datetime NOT NULL
+  );
+  
+  
+  8.Start no 1000
+  Command: ALTER TABLE orders AUTO_INCREMENT=1001;
+
+
+  9.Describe orders;
+  
+  10.Create table order_details
+  Command:
+  CREATE TABLE order_details
+  (
+  order_id int  NOT NULL,
+  product_id int not null,
+  product_name  varchar(50) NOT NULL,
+  product_unit  varchar(50) NOT NULL,
+  quantity double,
+  total double
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
